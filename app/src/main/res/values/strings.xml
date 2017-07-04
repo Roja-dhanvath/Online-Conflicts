@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjectLogIn</string>
+    <string name="string_answer_count">Answered By %1$d Counsolers</string>
+    <string name="string_posted_by">Posed By\n%s</string>
+</resources>

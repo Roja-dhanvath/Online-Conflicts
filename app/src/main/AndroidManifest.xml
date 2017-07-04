@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rojad.projectlogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".CounselorApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".account.LogIn"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".account.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.UserDashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.UserWelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.PostProblemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".counselor.CounselorDashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".counselor.CounselUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.ViewAnswersActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

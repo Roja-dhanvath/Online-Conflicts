@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_marginTop="15dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:cardElevation="5dp">
+
+        <LinearLayout android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" android:padding="5dp"
+                tools:text="1234567890 qwertyuio sdfghjkl cvbnm, 345 dfgh vb ertyuikrej"
+                android:textStyle="normal|bold"
+                android:typeface="normal"
+                android:textColor="@android:color/black" />
+
+            <View android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" android:background="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/textview_posted_by"
+                    android:layout_width="0dp" android:textSize="15sp"
+                    android:layout_height="match_parent" android:gravity="center"
+                    android:layout_weight="0.5" tools:text="@string/string_posted_by"
+                    android:textColor="?attr/colorAccent"
+                    android:textStyle="normal|bold"
+                    android:typeface="normal" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" android:background="@android:color/black"/>
+                <TextView
+                    android:id="@+id/textview_answered_count"
+                    android:layout_width="0dp" android:gravity="center"
+                    android:layout_height="match_parent" android:textSize="15sp" android:text="Click to Ans here"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
